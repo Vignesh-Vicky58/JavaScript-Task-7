@@ -1,0 +1,44 @@
+<html> 
+    <head>
+        <title>JS Task 7</title>
+        <style>
+            .nam{
+                border: 1px solid black;
+                padding: 10px;
+                margin-right: 80%;
+                align-items: center;
+            }
+        </style>
+    </head>
+<body>
+    <div class="nam">
+    <form>
+        1st Number : <input type="text" id="fn" /><br><br>
+        2nd Number: <input type="text" id="sn" /><br><br>
+
+        <input type="button" onClick="multiplyBy()" Value="Multiply" />
+        <input type="button" onClick="divideBy()" Value="Divide" />
+    </form>
+    
+    <p>The Result is : <br>
+        <span id = "result"></span>
+    </p>
+    </div>
+    <script type="text/javascript">
+
+     function multiplyBy()
+     {
+        num1 = document.getElementById("fn").value;
+        num2 = document.getElementById("sn").value;
+        document.getElementById("result").innerHTML = num1 * num2;
+    }
+
+    function divideBy() 
+    { 
+        num1 = document.getElementById("fn").value;
+        num2 = document.getElementById("sn").value;
+        document.getElementById("result").innerHTML = num1 / num2;
+    } 
+</script>
+</body>
+</html>
